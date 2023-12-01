@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Virtual</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Barra de Navegação -->
+
+        <nav class="blue">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Currículo Virtual</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#objetivo">Objetivo</a></li>
+                    <li><a href="#educacao">Educação</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#idiomas">Idiomas</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav>
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo Principal -->
+
+    <section class="container">
+
+        <!-- Sobre -->
+
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="Eloíza Cebolinha.jpg" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Olá, Me chamo</span>
+                        <h1><span class="blue-text text-darken-2">Thalison</span> Renan</h1>
+                        <p>Sou um estudante apaixonado por tecnologia e informática, em busca de oportunidades para desenvolver habilidades práticas...</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://wa.me//5584987790759?text=Olá,%20tudo%20bem?" target="_blank">WhatsApp</a>
+                        <a href="https://www.instagram.com/thalisonrenan__/" target="_blank">Instagram</a>
+                        <a href="https://github.com/ThalisonR?tab=projects" target="_blank">GitHub</a>
+                        <a href="https://www.youtube.com/channel/UCin0BzxdglkTwremmnrXTJQ" target="_blank">YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Outras seções do currículo -->
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+
+</html>

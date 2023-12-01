@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Virtual</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Barra de Navegação -->
+
+        <nav class="navbar">
+            <a href="#sobre" class="active">Sobre</a>
+            <a href="#objetivo">Objetivo</a>
+            <a href="#educacao">Educação</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#idiomas">Idiomas</a>
+            <a href="#projetos">Projetos</a>
+        </nav>
+
+        <div class="icon-container">
+            <div class="icone">
+                <div onclick=showSidebar() id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+
+        <nav class="sidebar">
+            <ul>
+                <li onclick=hideSidebar() class="li-sidebar"><a href="#" class="a-sidebar"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36"
+                            fill="red">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class=" li-sidebar"><a href="bootstrap.html" class="a-sidebar">Bootstrap</a></li>
+                <li class=" li-sidebar"><a href="#" class="a-sidebar">Materialize CSS</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Conteúdo Principal -->
+
+    <section class="container">
+
+        <!-- Sobre -->
+
+        <div class="main">
+            <div class="content-container" id="sobre">
+                <div class="images" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="Eloíza Cebolinha.jpg" alt="" class="img-w">
+                </div>
+                <div class="detail">
+                    <h3 data-aos="fade-right" data-aos-duration="1500">Olá, Me chamo</h3>
+                    <h1 data-aos="zoom-in" data-aos-duration="1500"><span style="color: #4362ff;">Thalison</span> Renan
+                    </h1>
+                    <p class="text" data-aos="zoom-in" data-aos-duration="1500">Sou um estudante apaixonado por
+                        tecnologia e informática, em busca de oportunidades para desenvolver habilidades práticas. Minha
+                        paixão pela resolução de problemas e pela criatividade impulsiona meu desejo de explorar novas
+                        tecnologias e aprender constantemente. Tenho habilidades sólidas em programação e estou sempre
+                        buscando maneiras de aprimorar meu conhecimento. Estou entusiasmado para colaborar em projetos
+                        desafiadores, contribuir com minha energia e disposição para aprender, e estou pronto para
+                        enfrentar os desafios dinâmicos do mundo da tecnologia.</p>
+                    <div class="social" data-aos="fade-right" data-aos-duration="1500">
+                        <a href="https://wa.me//5584987790759?text=Olá,%20tudo%20bem?" target="_blank"><i
+                                class='bx bxl-whatsapp'></i></a>
+                        <a href="https://www.instagram.com/thalisonrenan__/" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/ThalisonR?tab=projects" target="_blank"><i
+                                class='bx bxl-github'></i></a>
+                        <a href="https://www.youtube.com/channel/UCin0BzxdglkTwremmnrXTJQ" target="_blank"><i
+                                class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Objetivo Profissional -->
+
+            <section class="info-container" id="objetivo">
+                <div class="info-content-container">
+                    <h2 data-aos="fade-right" data-aos-duration="1500">Objetivo Profissional</h2>
+                    <div class="info-content">
+                        <div class="content">
+                            <p class="text-info" data-aos="fade-left" data-aos-duration="1500">Dedicado e apaixonado por
+                                programação, busco estabelecer uma carreira sólida como desenvolvedor full-stack. Meu
+                                objetivo é aplicar minha expertise em linguagens de programação, frameworks e
+                                metodologias ágeis para contribuir significativamente no desenvolvimento de soluções
+                                inovadoras e impactantes. Busco constantemente aprimorar minhas habilidades técnicas e
+                                liderança para desempenhar um papel fundamental no sucesso de projetos, agregando valor
+                                à equipe e à empresa.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <!-- Educação -->
+
+            <section class="info-container" id="educacao">
+                <div class="info-content-container">
+                    <h2 data-aos="fade-right" data-aos-duration="1500">Educação</h2>
+                    <div class="info-content" data-aos="zoom-in-down" data-aos-duration="1500">
+                        <div class="content">
+                            <h3 class="h3">Escola Estadual João Ferreira de Souza</h3>
+                            <div class="subtitulo">Ensino Fundamental</div>
+                        </div>
+                        <div class="duracao"><span class="text-primary">Fevereiro 2012 - Dezembro 2020</span></div>
+                    </div>
+                    <div class="info-content" data-aos="zoom-in-down" data-aos-duration="1500">
+                        <div class="content">
+                            <h3 class="h3">Instituto Federal do Rio Grande do Norte</h3>
+                            <div class="subtitulo">Ensino Médio e Formação Técnica em Informática</div>
+                        </div>
+                        <div class="duracao"><span class="text-primary">Maio 2021 - Pendente</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+
+            <!-- Habilidades -->
+
+            <section class="info-container" id="habilidades">
+                <div class="info-content-container">
+                    <h2 data-aos="fade-right" data-aos-duration="1500">Habilidades</h2>
+                    <div class="subtitulo-skills" data-aos="fade-left" data-aos-duration="1500">Linguagens de
+                        Programação & Ferramentas</div>
+                    <ul class="list-inline" data-aos="fade-up-right" data-aos-duration="1500">
+                        <li class="list-inline-item"><i class="fab fa-html5"></i>
+                            <h3 class="h3-skills">HTML</h3>
+                        </li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i>
+                            <h3 class="h3-skills">CSS</h3>
+                        </li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i>
+                            <h3 class="h3-skills">JAVA</h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+
+            <!-- Idiomas -->
+
+            <section class="info-container" id="idiomas">
+                <div class="info-content-container">
+                    <h2 class="h2-idiomas" data-aos="fade-right" data-aos-duration="1500">Idiomas</h2>
+                    <ul class="list-inline" data-aos="zoom-in-down" data-aos-duration="1500">
+                        <li class="list-inline-item">
+                            <h3 class="h3-idiomas">Português<span class="perIdioma">*Avançado</span></h3>
+                        </li>
+                        <li class="list-inline-item">
+                            <h3 class="h3-idiomas">Inglês<span class="perIdioma">*Médio</span></h3>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+
+            <!-- Projetos -->
+
+            <section class="info-container" id="projetos">
+                <div class="info-content-container">
+                    <h2 data-aos="fade-right" data-aos-duration="1500">Projetos</h2>
+                    <div class="card-container">
+                        <div class="card" data-aos="zoom-in-down" data-aos-duration="1500">
+                            <img src="images/Projeto_SYSMO.png" alt="Projeto de Irrigação Automática">
+                            <div class="card-content">
+                                <h3>SYSMO</h3>
+                                <p>O presente projeto, nomeado SYSMO, tem como objetivo reduzir o consumo excessivo de
+                                    água e energia na agricultura por meio de um dispositivo de controle de irrigação
+                                    que será integrado a um aplicativo para consulta de dados e controle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <!-- Rodapé -->
+
+    <section class="footer">
+
+        <div class="conjunto-caixas">
+
+            <div class="caixa">
+                <h3><i class="fa-solid fa-briefcase"></i>Projetos</h3>
+                <a href="https://github.com/ThalisonR?tab=projects" target="_blank" class="links"><i
+                        class="fab fa-github fa-lg"></i> GitHub</a>
+            </div>
+
+            <div class="caixa">
+                <h3>Informações para Contato</h3>
+                <p class="links"><i class="fas fa-phone"></i> +55 84 8759-2108</p>
+                <p class="links"><i class="fas fa-envelope"></i> thalison.renan@escolar.ifrn.edu.br</p>
+                <a href="https://www.google.com/maps/place/IFRN+-+Campus+Santa+Cruz/@-6.2285812,-36.0278657,15z/data=!4m6!3m5!1s0x7b1fb9253030885:0x3277ef10d08080a8!8m2!3d-6.2285812!4d-36.0278657!16s%2Fg%2F1pty85fsc?entry=ttu"
+                    target="_blank" class="links"><i class="fas fa-map-marker-alt"></i> IFRN - Santa Cruz</a>
+            </div>
+
+            <div class="caixa">
+                <h3>Desenvolvedores</h3>
+                <p class="links"> <i class="fas fa-user"></i> Thalison Renan da Silva Julião</p>
+                <p class="links"> <i class="fas fa-user"></i> Prof. Marcelo Figueiredo Barbosa Júnior</p>
+            </div>
+
+        </div>
+
+        <div class="creditos">&copy; 2023 Thalison. Todos os direitos reservados por <a href="#" class="link">Trabalho
+                de Autoria Web</a></div>
+
+    </section>
+
+    <script>
+        // Sidebar Lateral
+
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = 'none'
+        }
+
+        // Hover no Scroll
+
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header .navbar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.id;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Animações -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

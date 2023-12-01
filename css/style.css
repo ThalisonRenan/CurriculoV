@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+  --primary-color: #4362ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: #1F252E;
+}
+
+/* Estiliza o Icone dos Projetos */
+
+.fa-briefcase {
+  margin-right: 10px;
+}
+
+/* Estiliza o Icone de Telefone */
+
+.fa-phone {
+  color: rgb(1, 204, 1);
+}
+
+/* Estiliza o Icone de Localização */
+
+.fa-map-marker-alt {
+  color: rgb(255, 34, 34);
+}
+
+/* Linha */
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(85, 104, 254, 0.5);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Textos */
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 400px;
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-info {
+  margin-top: -60px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  color: #4362ff;
+  font-size: 2rem;
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+}
+
+.h3 {
+  margin-bottom: 0;
+}
+
+.subtitulo {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+  color: #5d78fe;
+}
+
+.text-primary {
+  color: #5d78fe;
+}
+
+.subtitulo-skills {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: -40px;
+  color: #5d78fe;
+}
+
+.h3-skills {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.h3-idiomas {
+  display: flex;
+  align-items: center;
+  margin-left: -35px;
+}
+
+.h2-idiomas {
+  margin-bottom: 8rem;
+}
+
+/* -- Cabeçalho -- */
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #0D1014;
+  box-shadow: 0px -5px 20px rgba(85, 104, 254, 0.5);
+  padding: 1rem 9%;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+header .navbar a {
+  font-size: 1.4rem;
+  color: white;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+header .navbar a:hover {
+  color: #5d78fe;
+}
+
+.navbar a.active {
+  color: #5d78fe;
+}
+
+.icone {
+  margin-right: -1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -5px 20px rgba(85, 104, 254, 0.5);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.li-sidebar {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.a-sidebar {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 0px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.a-sidebar:hover {
+  background-color: #1B1F27;
+}
+
+/* -- Conteúdo Principal -- */
+
+.main {
+  min-height: 70vh;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+
+.main h1 {
+  color: #000;
+  font-size: 4rem;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.content-container {
+  margin-left: -25%;
+  padding: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
+  row-gap: 1.5rem;
+  column-gap: 3rem;
+}
+
+/* Minha imagem */
+
+.images {
+  margin-top: -55px;
+  margin-right: 50px;
+  margin-left: auto;
+  width: 300px;
+}
+
+.images img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px #D1D9E6;
+}
+
+.img-w {
+  width: 300px;
+  height: 300px;
+}
+
+/* -- Redes Sociais -- */
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.social a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  border: 1.6px solid var(--primary-color);
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.39rem;
+  text-align: center;
+  opacity: 1;
+}
+
+.social a:hover {
+  color: var(--primary-dark);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color);
+  transition: all .3s ease-in-out;
+}
+
+/* Conteúdo */
+
+.info-container {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+  margin-left: 17%;
+  padding: 13.5rem 0;
+}
+
+.info-content-container {
+  width: 100%;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+/* Habilidades */
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  padding: 20px;
+}
+
+.list-inline-item {
+  display: flex;
+  padding: 15px;
+  color: white;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+/* Idiomas */
+
+.content {
+  flex-grow: 1;
+}
+
+.duracao {
+  flex-shrink: 0;
+}
+
+.perIdioma {
+  color: #5d78fe;
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+/* Projetos */
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 1000px;
+  background-color: #181920;
+  box-shadow: 0 4px 8px rgba(85, 104, 254, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 600px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  color: #526efc;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: justify;
+  margin: 25px 40px;
+}
+
+/* -- Rodapé -- */
+
+/* Estiliza o rodapé inteiro */
+
+.footer {
+  position: relative;
+  background-color: #0D1014;
+  background-size: cover;
+  box-shadow: 0px 0px 20px rgba(85, 104, 254, 0.5);
+  padding: 3rem 7%;
+}
+
+/* Estiliza a caixa do rodapé */
+
+.footer .conjunto-caixas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* Estiliza o título das caixas do rodapé */
+
+.footer .conjunto-caixas .caixa h3 {
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+/* Estiliza os textos das caixas do rodapé */
+
+.footer .conjunto-caixas .caixa p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* Estiliza os textos dos ícones do rodapé*/
+
+.footer .conjunto-caixas .caixa .links {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  padding: .7em 0;
+}
+
+/* Para definir o espaçamento do texto para os ícones */
+
+.footer .conjunto-caixas .caixa .links i {
+  padding-right: .5rem;
+}
+
+/* Faz os textos dos icones fastarem para a direita ao passar o mouse*/
+
+.footer .conjunto-caixas .caixa .links:hover i {
+  padding-right: 1.2rem;
+}
+
+/* Estiliza o horário de funcionamento*/
+
+.footer .conjunto-caixas .caixa .dias {
+  margin-left: 2.2rem;
+  line-height: .2;
+}
+
+/* Estiliza os créditos no final do footer*/
+
+.footer .creditos {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  border-top: .2rem solid rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza o nome que está nos direitos reservados*/
+
+.footer .creditos .link {
+  color: #CDB0F7;
+}

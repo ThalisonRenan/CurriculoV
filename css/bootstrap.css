@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+body {
+  background-color: #1F252E;
+}
+
+* {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
+  color: black;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.img-fluid {
+  width: 500px;
+  height: 500px;
+}
+
+nav {
+  background-color: #0D1014;
+  box-shadow: 0px -5px 20px rgba(85, 104, 254, 0.5);
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: center;
+  margin-left: -220px;
+  font-size: 1.3rem;
+}
+
+hr {
+  margin-top: 300px;
+  margin-bottom: 300px;
+  border: 0;
+  border-top: 1px solid rgba(85, 104, 254, 0.5);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-top: 1.4rem;
+}
+
+.social a {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  color: var(#4362ff);
+  border: 1.6px solid #4362ff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.39rem;
+  text-align: center;
+  opacity: 1;
+}
+
+.social a:hover {
+  color: black;
+  background-color: #4362ff;
+  box-shadow: 0 0 20px #4362ff;
+  transition: all .3s ease-in-out;
+}
+
+h2 {
+  color: #4362ff;
+  margin-bottom: 12rem;
+}
+
+.h3 {
+  font-size: 2rem;
+  color: white;
+}
+
+.subtitulo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #4362ff;
+}
+
+.duracao {
+  color: white;
+}
+
+.texto-o {
+  font-size: 1.2rem;
+  text-align: justify;
+  color: white;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  padding: 20px;
+  margin-left: -220px;
+}
+
+.list-inline-item {
+  display: flex;
+  padding: 15px;
+  color: white;
+}
+
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.h3-skills {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.subtitulo-skills {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: -40px;
+  color: #5d78fe;
+}
+
+.h3-idiomas {
+  display: flex;
+  align-items: center;
+  margin-left: -35px;
+}
+
+.h2-idiomas {
+  margin-bottom: 8rem;
+}
+
+.perIdioma {
+  color: #5d78fe;
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.icone {
+  margin-right: -1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px -5px 20px rgba(85, 104, 254, 0.5);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.li-sidebar {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.a-sidebar {
+
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  padding: 0px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.a-sidebar:hover {
+  background-color: #1B1F27;
+}
+
+.footer {
+  position: relative;
+  background-color: #0D1014;
+  background-size: cover;
+  box-shadow: 0px 0px 20px rgba(85, 104, 254, 0.5);
+  padding: 3rem 7%;
+}
+
+/* Estiliza a caixa do rodapé */
+
+.footer .conjunto-caixas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* Estiliza o título das caixas do rodapé */
+
+.footer .conjunto-caixas .caixa h3 {
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+/* Estiliza os textos das caixas do rodapé */
+
+.footer .conjunto-caixas .caixa p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* Estiliza os textos dos ícones do rodapé*/
+
+.footer .conjunto-caixas .caixa .links {
+  display: block;
+  font-size: 1.1rem;
+  color: white;
+  padding: .7em 0;
+}
+
+/* Para definir o espaçamento do texto para os ícones */
+
+.footer .conjunto-caixas .caixa .links i {
+  padding-right: .5rem;
+}
+
+/* Faz os textos dos icones fastarem para a direita ao passar o mouse*/
+
+.footer .conjunto-caixas .caixa .links:hover i {
+  padding-right: 1.2rem;
+}
+
+/* Estiliza o horário de funcionamento*/
+
+.footer .conjunto-caixas .caixa .dias {
+  margin-left: 2.2rem;
+  line-height: .2;
+}
+
+/* Estiliza os créditos no final do footer*/
+
+.footer .creditos {
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  border-top: .2rem solid rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza o nome que está nos direitos reservados*/
+
+.footer .creditos .link {
+  color: #CDB0F7;
+}
+
+/* Estiliza o Icone dos Projetos */
+
+.fa-briefcase {
+  margin-right: 10px;
+}
+
+/* Estiliza o Icone de Telefone */
+
+.fa-phone {
+  color: rgb(1, 204, 1);
+}
+
+/* Estiliza o Icone de Localização */
+
+.fa-map-marker-alt {
+  color: rgb(255, 34, 34);
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 1000px;
+  background-color: #181920;
+  box-shadow: 0 4px 8px rgba(85, 104, 254, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 600px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  color: #526efc;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: white;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: justify;
+  margin: 25px 40px;
+}
